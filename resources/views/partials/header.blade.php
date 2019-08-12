@@ -1,12 +1,13 @@
 <header class="header">
   <div class="container header__container">
     <div class="header__logo">
-      <a class="logo" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}
-
+      <a class="header__logo-link" href="{{ home_url('/') }}">
+        <div class="header__logo-name">{{ get_bloginfo('name', 'display') }}</div>
+        <div class="header__logo-desc">{{ get_bloginfo('description', 'display') }}</div>
       </a>
     </div>
     <div class="header__menu">
-      <nav class="nav-primary">
+      <nav class="header__menu-nav">
         @if (has_nav_menu('primary_navigation'))
           {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
         @endif

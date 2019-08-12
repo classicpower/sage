@@ -5,3 +5,38 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.header {
+  min-height: 56px;
+  background: rgba(0, 0, 0, 0.4);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 30%;
+
+    &-name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__menu {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__contacts {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
