@@ -18,12 +18,25 @@
   &__logo {
     width: 30%;
 
+    &-link {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
     &-name {
-      font-style: normal;
-      font-weight: bold;
+      @include robotoCondensedBold();
+
       font-size: 14px;
       text-transform: uppercase;
-      color: #fff;
+    }
+
+    &-desc {
+      @include robotoCondensed();
+
+      font-size: 13px;
     }
   }
 
