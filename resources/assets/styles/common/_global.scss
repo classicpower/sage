@@ -1,0 +1,14 @@
+body {
+  @include robotoCondensed();
+
+  position: relative;
+}
+
+.offscroll {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+}

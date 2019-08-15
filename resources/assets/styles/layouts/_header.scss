@@ -1,24 +1,30 @@
-.banner .nav li {
-  @extend .nav-item;
-}
-
-.banner .nav a {
-  @extend .nav-link;
-}
-
 .header {
-  min-height: 56px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   background: rgba(0, 0, 0, 0.4);
 
   &__container {
     display: flex;
     align-items: center;
+    height: 56px;
+
+    @include media-breakpoint-down(sm) {
+      justify-content: space-between;
+    }
   }
 
   &__logo {
-    width: 30%;
+    width: 20%;
+    flex: 0 0 222px;
+
+    @include media-breakpoint-down(sm) {
+      flex: 1;
+    }
 
     &-link {
+      transition: all 0.3s;
       text-decoration: none;
 
       &:hover {
@@ -38,18 +44,206 @@
 
       font-size: 13px;
     }
+
+    &--hide {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
   }
 
   &__menu {
-    width: 45%;
-    display: flex;
-    justify-content: center;
+    width: 57%;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: left 0.8s ease-in-out;
+
+    @include robotoCondensedBold();
+
+    &-nav {
+      width: 100%;
+    }
+
+    .nav {
+      justify-content: center;
+
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include media-breakpoint-down(md) {
+        @include orientation(landscape) {
+          flex-direction: row;
+        }
+      }
+
+      li {
+        padding: 0 2%;
+
+        @include media-breakpoint-down(lg) {
+          padding: 2%;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      height: 100vh;
+      position: absolute;
+      left: -100%;
+      top: 0;
+      background: $main-color;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &--open {
+      left: 0;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+      order: 3;
+      z-index: 10;
+    }
+
+    &-btn {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      color: transparent;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.3s;
+      padding: 0;
+      width: 21px;
+      height: 18px;
+      border: none;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-bar,
+    &-bar::after,
+    &-bar::before {
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+    }
+
+    &-bar {
+      top: 50%;
+      transform: translateY(-50%);
+
+      &::after,
+      &::before {
+        content: "";
+        transition: all 0.3s;
+      }
+
+      &::after {
+        bottom: -7px;
+        transition-property: bottom, transform;
+      }
+
+      &::before {
+        top: -7px;
+        transition-property: top, transform;
+      }
+    }
+
+    &--active {
+      .header__hamburger-bar {
+        background: none;
+
+        &::before {
+          top: 0;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          bottom: 0;
+          transform: rotate(-45deg);
+        }
+      }
+    }
   }
 
   &__contacts {
-    width: 25%;
+    width: 23%;
+    flex: 0 0 256px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    transition-delay: 1s;
+
+    @include robotoCondensedBold();
+
+    &-tel {
+      font-size: 15px;
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+      }
+    }
+
+    &-btn {
+      font-size: 16px;
+      padding: 0;
+      color: $link-color;
+      text-decoration: underline;
+
+      &:hover {
+        color: $link-hover-color;
+        text-decoration: underline;
+      }
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      order: 2;
+      margin: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    &--active {
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        margin: 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
 }
