@@ -1,6 +1,6 @@
 $Roboto: "Roboto";
 $RobotoCondensed: "RobotoCondensed";
-$RobotoCondensedBold: "RobotoCondensed-Bold";
+$RobotoCondensed-Bold: "RobotoCondensed-Bold";
 
 @mixin fontface($fontName, $urlName: $fontName, $weight: normal, $style: normal) {
   @font-face {
@@ -17,7 +17,7 @@ $RobotoCondensedBold: "RobotoCondensed-Bold";
 }
 
 @include fontface($RobotoCondensed, $RobotoCondensed, normal, normal);
-@include fontface($RobotoCondensedBold, $RobotoCondensed, bold, normal);
+@include fontface($RobotoCondensed-Bold, $RobotoCondensed-Bold, normal, normal);
 @include fontface($Roboto, $Roboto, normal, normal);
 
 @mixin robotoCondensed() {
@@ -25,7 +25,7 @@ $RobotoCondensedBold: "RobotoCondensed-Bold";
 }
 
 @mixin robotoCondensedBold() {
-  font-family: $RobotoCondensedBold, Helvetica, sans-serif;
+  font-family: $RobotoCondensed-Bold, Helvetica, sans-serif;
 }
 
 @mixin roboto() {
