@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
 
   &__container {
     display: flex;
@@ -145,7 +146,7 @@
       left: 0;
       height: 2px;
       width: 100%;
-      background: #fff;
+      background: $white;
     }
 
     &-bar {
@@ -210,14 +211,24 @@
     }
 
     &-btn {
+      background-color: transparent;
       font-size: 16px;
       padding: 0;
       color: $link-color;
       text-decoration: underline;
+      border: 0;
 
       &:hover {
         color: $link-hover-color;
         text-decoration: underline;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:active {
+        outline: none;
       }
 
       @include media-breakpoint-down(sm) {

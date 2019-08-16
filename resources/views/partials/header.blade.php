@@ -20,7 +20,7 @@
     </div>
     <div class="header__contacts">
       <a href="tel:88123456790"class="header__contacts-tel">8 (812) 345 67 90</a>
-      <button type="button" class="btn header__contacts-btn">Заказать звонок</button>
+      <button type="button" class="header__contacts-btn">Заказать звонок</button>
     </div>
   </div>
 </header>
