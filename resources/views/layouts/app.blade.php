@@ -4,10 +4,24 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     @include('partials.header')
-    <div class="wrap container" role="document">
+    <div class="wrap" role="document">
       <div class="content">
         <main class="main">
-          @yield('content')
+          <!-- @yield('content') -->
+          <section class="begin">
+            <div class="begin__bg"></div>
+            <div class="container begin__container">
+              <h1 class="title begin__title">
+                <div class="begin__title-top">Ремонт и обслуживание</div>
+                <div class="begin__title-bottom">Винных шкафов и винотек</div>
+              </h1>
+              <p class="begin__desc">Мы работаем круглосуточно. По всей Москве и Московской области.
+  Доверьте свою технику профессионалам! </p>
+              <button type="button" class="begin__btn">
+                Вызвать мастера
+              </button>
+            </div>
+          </section>
         </main>
         @if (App\display_sidebar())
           <aside class="sidebar">
