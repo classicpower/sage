@@ -319,16 +319,45 @@
   &__title {
     color: $white;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   &__list {
     list-style: none;
+    padding: 0;
   }
 
   &__item {
     max-width: 970px;
     margin: 0 auto;
     position: relative;
+  }
+
+  &__dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__dot {
+    color: $white;
+    padding-right: 11px;
+
+    &--active {
+      font-size: 36px;
+
+      @include robotoCondensedBold();
+    }
+  }
+
+  &__text,
+  p {
+    color: $white;
+    position: relative;
+    padding: 15px 33px;
+    text-align: justify;
+    margin: 0;
 
     &::before,
     &::after {
@@ -352,13 +381,9 @@
     }
   }
 
-  &__dots {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__text {
+  &__author {
+    padding-right: 33px;
+    text-align: right;
     color: $white;
   }
 }

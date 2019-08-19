@@ -187,15 +187,15 @@
                   <p class="reviews__text text">
                     Понадобилась срочная уборка, так как собирались приехать родственники. Нашел в поисковике фирму, позвонил. Ответили сразу. Сначала сказали, что не могут выслать бригаду, потом попросили повисеть на линии, сказали, что приедут. Приехали за полчаса, хотя были пробки, судя по Яндекс.Картам. Быстро все убрали: протерли пыль, отмыли фасады шкафа, пропылесосили, пятно с ковра удалили, помыли полы. Справились за 1,5 часа. Работой и в целом отношением сотрудников доволен, но вот собранный мусор они не забрали с собой, а в мусорное ведро положили.
                   </p>
-                  <div class="reviews__author">Оксана Николаевна</div>
+                  <div class="reviews__author subtitle">Оксана Николаевна</div>
                 </li>
               </ul>
               <ul class="reviews__dots">
-                <li class="reviews__dot">01</li>
-                <li class="reviews__dot">02</li>
-                <li class="reviews__dot">03</li>
-                <li class="reviews__dot">04</li>
-                <li class="reviews__dot">05</li>
+                <li class="reviews__dot text">01</li>
+                <li class="reviews__dot text">02</li>
+                <li class="reviews__dot reviews__dot--active text">03</li>
+                <li class="reviews__dot text">04</li>
+                <li class="reviews__dot text">05</li>
               </ul>
             </div>
           </section>
