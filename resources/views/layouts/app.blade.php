@@ -190,12 +190,131 @@
                   <div class="reviews__author subtitle">Оксана Николаевна</div>
                 </li>
               </ul>
-              <ul class="reviews__dots">
-                <li class="reviews__dot text">01</li>
-                <li class="reviews__dot text">02</li>
-                <li class="reviews__dot reviews__dot--active text">03</li>
-                <li class="reviews__dot text">04</li>
-                <li class="reviews__dot text">05</li>
+              <div class="reviews__dots">
+                <button type="button" class="reviews__dot text">01</button>
+                <button type="button" class="reviews__dot text">02</button>
+                <button type="button" class="reviews__dot reviews__dot--active text">03</button>
+                <button type="button" class="reviews__dot text">04</button>
+                <button type="button" class="reviews__dot text">05</button>
+              </div>
+            </div>
+          </section>
+          <section class="brands">
+            <div class="brands__container container">
+              <h2 class="brands__title title">Бренды, с которыми мы работаем</h2>
+              <ul class="brands__list">
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
+                <li class="brands__item">
+                  <picture class="brands__picture">
+                    <source media="(-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi)" 
+                            srcset="@asset('images/coldvine@2x.png')">
+                    <img src="@asset('images/coldvine.png')" alt="">
+                  </picture>
+                </li>
               </ul>
             </div>
           </section>
