@@ -1,0 +1,78 @@
+/** Section advantage **/
+
+.advantage {
+  &__container {
+    padding: 44px 30px;
+    display: flex;
+
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+      padding: 44px 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+  }
+
+  &__col {
+    display: flex;
+
+    &-desc {
+      width: 67%;
+      padding-right: 3%;
+
+      @include media-breakpoint-down(sm) {
+        order: 2;
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    &-form {
+      width: 33%;
+      min-width: 376px;
+      display: flex;
+      justify-content: flex-end;
+
+      @include media-breakpoint-down(sm) {
+        order: 1;
+        width: 100%;
+        min-width: 0;
+      }
+
+      form {
+        margin-top: -120px;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    margin-right: 22px;
+    flex: 1 0 48px;
+  }
+
+  &__content {
+    &-title {
+      @include robotoCondensedBold();
+
+      font-size: 20px;
+    }
+
+    &-text {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/** Section advantage end **/

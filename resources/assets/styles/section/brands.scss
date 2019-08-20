@@ -1,0 +1,32 @@
+/** Section brands **/
+
+.brands {
+  &__container {
+    padding: 44px 15px 50px;
+  }
+
+  &__title {
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  &__item {
+    width: calc((100%/ 8) + 1px);
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
+    margin-left: -1px;
+
+    @include media-breakpoint-down(md) {
+      width: calc((100%/ 4) + 1px);
+    }
+  }
+}
+
+/** Section brands **/

@@ -1,0 +1,120 @@
+/** Section services **/
+
+.services {
+  background: #f8f6f6;
+
+  &__container {
+    padding: 44px 115px;
+    transition: 0.5s;
+
+    @include media-breakpoint-down(lg) {
+      padding: 44px 15px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__table {
+    margin: 29px 0 35px;
+    background-color: $white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+
+    &-header {
+      background: $main-color;
+      color: $white;
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      border: 1px solid $main-color;
+      border-radius: 4px 4px 0 0;
+
+      @include robotoCondensedBold();
+
+      .services__row {
+        display: flex;
+        align-items: center;
+
+        &-name {
+          width: 76%;
+          padding: 16px 15px 14px 33px;
+          transition: 0.5s;
+
+          @include media-breakpoint-down(sm) {
+            padding: 16px 15px 14px 15px;
+            width: 60%;
+          }
+        }
+
+        &-price {
+          width: 24%;
+          min-width: 275px;
+          padding: 16px 15px 14px 33px;
+          transition: 0.5s;
+
+          @include robotoCondensedBold();
+
+          @include media-breakpoint-down(sm) {
+            padding: 16px 15px 14px 15px;
+            min-width: 0;
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    &-body {
+      .services__row {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(even) {
+          background-color: #f8f6f6;
+          border-top: 1px solid #eae7e7;
+          border-bottom: 1px solid #eae7e7;
+        }
+
+        &-name {
+          width: 76%;
+          padding: 10px 15px 9px 33px;
+          border-right: 1px solid #eae7e7;
+          transition: 0.5s;
+
+          @include media-breakpoint-down(sm) {
+            padding: 10px 15px 9px 15px;
+            width: 60%;
+          }
+        }
+
+        &-price {
+          width: 24%;
+          min-width: 275px;
+          padding: 10px 15px 9px 33px;
+          transition: 0.5s;
+
+          @include robotoCondensedBold();
+
+          @include media-breakpoint-down(sm) {
+            padding: 10px 15px 9px 15px;
+            min-width: 0;
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+
+  &__order {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      background: $main-color;
+      padding: 10px 83px 9px;
+      border: 1px solid $main-color;
+    }
+  }
+}
+
+/** Section services end **/
