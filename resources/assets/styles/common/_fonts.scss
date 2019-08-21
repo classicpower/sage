@@ -1,4 +1,5 @@
 $Roboto: "Roboto";
+$Roboto-Black: "Roboto-Black";
 $RobotoCondensed: "RobotoCondensed";
 $RobotoCondensed-Bold: "RobotoCondensed-Bold";
 
@@ -17,8 +18,9 @@ $RobotoCondensed-Bold: "RobotoCondensed-Bold";
 }
 
 @include fontface($RobotoCondensed, $RobotoCondensed, normal, normal);
-@include fontface($RobotoCondensed-Bold, $RobotoCondensed-Bold, normal, normal);
+@include fontface($RobotoCondensed-Bold, $RobotoCondensed-Bold, bold, normal);
 @include fontface($Roboto, $Roboto, normal, normal);
+@include fontface($Roboto-Black, $Roboto-Black, bold, normal);
 
 @mixin robotoCondensed() {
   font-family: $RobotoCondensed, Helvetica, sans-serif;
@@ -30,4 +32,8 @@ $RobotoCondensed-Bold: "RobotoCondensed-Bold";
 
 @mixin roboto() {
   font-family: $Roboto, Helvetica, sans-serif;
+}
+
+@mixin robotoBlack {
+  font-family: $Roboto-Black, Helvetica, sans-serif;
 }
