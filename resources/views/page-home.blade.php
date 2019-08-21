@@ -6,7 +6,11 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
-    @include('partials.content-page')
+    @include('section.begin')
+    @include('section.advantage')
+    @include('section.services')
+    @include('section.reviews')
+    @include('section.brands')
+    @include('section.faq')
   @endwhile
 @endsection
