@@ -1,0 +1,85 @@
+/** Section services **/
+
+.faq {
+  background: #f8f6f6;
+
+  &__container {
+    padding: 46px 115px 50px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: $white;
+  }
+
+  &__item {
+    padding: 0;
+    border-bottom: 1px solid #e5e5e5;
+
+    &:last-child {
+      border: none;
+    }
+
+    &-title {
+      margin: 0;
+      position: relative;
+    }
+
+    &-text {
+      margin-left: 110px;
+      height: 0;
+      opacity: 0;
+      transition: all 0.5s;
+      margin-bottom: 0;
+    }
+
+    &--active {
+      .faq__item-title {
+        color: $main-color;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -17px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #000;
+        }
+      }
+
+      .faq__item-text {
+        height: 100%;
+        opacity: 1;
+        margin-bottom: 33px;
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+    }
+
+    &-number {
+      @include robotoBlack();
+
+      font-weight: 900;
+      font-size: 42px;
+      text-transform: uppercase;
+      color: #dedddd;
+      flex: 0 0 110px;
+      padding: 0 30px 0 31px;
+    }
+  }
+}
+
+/** Section services end **/
