@@ -12,5 +12,6 @@
     @include('section.reviews')
     @include('section.brands')
     @include('section.faq')
+    @include('section.feedback')
   @endwhile
 @endsection
