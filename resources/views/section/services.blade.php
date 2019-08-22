@@ -65,8 +65,8 @@
         </div>
       </div>
     </div>
-    <div class="services__order">
-      <button type="button" class="services__order-btn button">Вызвать мастера</button>
+    <div class="services__order order">
+      <button type="button" class="services__order-btn order-btn button">Вызвать мастера</button>
     </div>
   </div>
 </section>

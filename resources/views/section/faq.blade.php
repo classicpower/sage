@@ -57,5 +57,8 @@
         </p>
       </li>
     </ul>
+    <div class="faq__order order">
+      <button type="button" class="faq__order-btn order-btn button">Задать вопрос</button>
+    </div>
   </div>
 </section>
