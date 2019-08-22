@@ -1,10 +1,15 @@
-/** Section services **/
+/** Section faq **/
 
 .faq {
   background: #f8f6f6;
 
   &__container {
     padding: 46px 115px 50px;
+    transition: 0.5s;
+
+    @include media-breakpoint-down(lg) {
+      padding: 44px 15px;
+    }
   }
 
   &__title {
@@ -18,6 +23,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     background-color: $white;
+    margin-bottom: 35px;
   }
 
   &__item {
@@ -31,35 +37,40 @@
     &-title {
       margin: 0;
       position: relative;
+      padding-right: 15px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
     }
 
-    &-text {
+    &-text,
+    p {
       margin-left: 110px;
       height: 0;
       opacity: 0;
       transition: all 0.5s;
       margin-bottom: 0;
+      overflow: hidden;
+      padding-right: 15px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        margin-left: 46px;
+      }
     }
 
     &--active {
       .faq__item-title {
         color: $main-color;
-
-        &::after {
-          content: "";
-          position: absolute;
-          bottom: -17px;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background-color: #000;
-        }
       }
 
-      .faq__item-text {
+      .faq__item-text,
+      p {
         height: 100%;
         opacity: 1;
         margin-bottom: 33px;
+        overflow: visible;
       }
     }
 
@@ -67,6 +78,9 @@
       display: flex;
       align-items: center;
       padding: 8px 0;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
     }
 
     &-number {
@@ -78,8 +92,15 @@
       color: #dedddd;
       flex: 0 0 110px;
       padding: 0 30px 0 31px;
+      transition: 0.5s;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 22px;
+        padding: 0 10px;
+        flex: 0 0 46px;
+      }
     }
   }
 }
 
-/** Section services end **/
+/** Section faq end **/
