@@ -47,6 +47,7 @@
       </div>
     </div>
     <div class="advantage__col advantage__col-form">
+    <div class="advantage__form">
       <form action="" method="post" class="form">
         <div class="form__container">
           <div class="form__header">
@@ -79,6 +80,7 @@
           </div>
         </div>
       </form>
+    </div>
     </div>
   </div>
 </section>
