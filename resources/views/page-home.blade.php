@@ -13,5 +13,6 @@
     @include('section.brands')
     @include('section.faq')
     @include('section.feedback')
+    @include('section.map')
   @endwhile
 @endsection
