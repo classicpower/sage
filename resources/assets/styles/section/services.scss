@@ -104,17 +104,6 @@
       }
     }
   }
-
-  &__order {
-    display: flex;
-    justify-content: center;
-
-    &-btn {
-      background: $main-color;
-      padding: 10px 83px 9px;
-      border: 1px solid $main-color;
-    }
-  }
 }
 
 /** Section services end **/
